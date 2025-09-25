@@ -1,0 +1,40 @@
+@startuml
+title Proceso ETL - Análisis de Ventas
+
+start
+
+:Extraer datos de archivos CSV;
+note right
+- customers.csv
+- products.csv
+- orders.csv
+- order_details.csv
+end note
+
+:Transformar datos;
+note right
+- Limpiar duplicados
+- Validar claves primarias
+- Convertir tipos (fechas, números)
+- Verificar integridad referencial
+end note
+
+:Cargar en la base de datos MySQL;
+note right
+Tablas destino:
+- customers
+- products
+- orders
+- order_details
+end note
+
+:Ejecutar consultas de verificación;
+note right
+- Conteo de registros
+- Ventas por producto
+- Ventas por cliente
+- Ventas mensuales
+end note
+
+stop
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+title Diagrama Entidad Relación - DB
+
+entity customers {
+  * CustomerID : INT
+  --
+  FirstName : VARCHAR
+  LastName : VARCHAR
+  Email : VARCHAR
+  Phone : VARCHAR
+  City : VARCHAR
+  Country : VARCHAR
+}
+
+entity products {
+  * ProductID : INT
+  --
+  ProductName : VARCHAR
+  Category : VARCHAR
+  Price : DECIMAL
+  Stock : INT
+}
+
+entity orders {
+  * OrderID : INT
+  --
+  CustomerID : INT
+  OrderDate : DATETIME
+  Status : VARCHAR
+}
+
+entity order_details {
+  * OrderID : INT
+  * ProductID : INT
+  --
+  Quantity : INT
+  TotalPrice : DECIMAL
+}
+
+customers ||--o{ orders : "realiza"
+orders ||--o{ order_details : "contiene"
+products ||--o{ order_details : "incluye"
+@enduml
