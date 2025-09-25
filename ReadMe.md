@@ -27,6 +27,7 @@ ETL-AnalisisVentas/
 │ └── ETL-AnalisisVentas.ipynb # Notebook Jupyter con el pipeline ETL
 │ └── ETL-ExportadoAnalisisVentas.py # Exportacion del script Python del notebook pipeline ETL
 ├── scripts/
+│ ├── Consultas-KPIs.sql	# Consultas SQL para KPIs
 │ └── create_sales_db.sql # Script SQL de creación de la BD y tablas
 ├── requirements.txt # Dependencias del proyecto
 └── README.md # Documentación del proyecto
