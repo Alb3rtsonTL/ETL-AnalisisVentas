@@ -20,9 +20,9 @@ ETL-AnalisisVentas/
 │ ├── DiagramaER.png
 │ ├── DiagramaFlujoETL.png
 │ └── screenshots/ # Evidencias y capturas de pantalla
-│ ├── count_customers.png
-│ ├── count_orders.png
-│ └── consultas.png
+│ ├── VentasTotalesCliente.png
+│ ├── VentasTotalesXproductos.png
+│ └── VentasXmes.png
 ├── notebooks/
 │ └── ETL-AnalisisVentas.ipynb # Notebook Jupyter con el pipeline ETL
 │ └── ETL-ExportadoAnalisisVentas.py # Exportacion del script Python del notebook pipeline ETL
