@@ -112,6 +112,7 @@ pip install -r requirements.txt
 
 2. **Pipeline ETL en Python:**  
    - [`notebooks/ETL-AnalisisVentas.ipynb`](notebooks/ETL-AnalisisVentas.ipynb) implementa todo el proceso de extracción, transformación y carga.
+- [`notebooks/ETL-ExportadoAnalisisVentas.py`](notebooks/ETL-ExportadoAnalisisVentas.py) Código exportado del Notebook que implementa todo el proceso de extracción, transformación y carga de los datos.
 
 3. **Documentación y diagramas:**  
    - Diagramas ER y de flujo ETL en [`docs/`](docs/).
